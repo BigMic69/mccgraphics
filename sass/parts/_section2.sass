@@ -83,30 +83,24 @@ img
   padding-bottom: 50px
   border-bottom: $border-color-green
   ul
-    width: 100%
-    margin: 0
-    padding: 0
-    display: flex
-    flex-flow: row wrap
-    justify-content: space-between
-    align-items: center
+    display: grid
+    grid-template-columns: minmax(200px, 1fr)
+    grid-auto-rows: auto
+    grid-gap: 10px
+    padding: 20px
+    @media (min-width: 769px)
+      grid-template-columns: repeat(3, 1fr)
     li
-      display: flex
-      flex: 1 1 30%
-      margin: 10px
+      grid-column: span 1
+      //flex: 1 1 30%
+      //margin: 10px
       padding: 5px 0
       //color: #232323
       list-style: none
       border: thin solid #262626
-      @media (max-width: 550px)
-        flex: 1 1 80%
-      @media (min-width: 551px) and (max-width: 768px)
-        flex: 1 1 50%
-      @media (min-width: 769px)
-        flex: 1 1 30%
       a
-        width: 100%
-        height: 100%
+        display: flex
+        justify-content: center
         margin: 0
         padding: 6px 0
         text-align: center
