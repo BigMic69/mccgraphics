@@ -1,0 +1,124 @@
+//----- SECTION 2 ----->>>>>
+#section2
+  +box-fluid
+  padding-top: 80px
+  padding-bottom: 50px
+  //min-height: 80vh
+  color: #fff
+  background-color: $clr-green
+  font-size: 1.5em
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-around
+  align-items: flex-start
+  div
+    //width: 300px
+    height: auto
+    padding: 10px
+    margin: 10px
+    background-color: $clr-dark-grey
+    text-align: center
+    border-radius: 15px
+img
+  width: 100%
+  height: auto
+  border-radius: 15px
+.left-side
+  flex: 1 260px
+  height: auto
+  +trans-1
+  border: thin solid $clr-med-grey
+  @media (min-width: 900px)
+    &:hover
+      border: thin solid #c9c9c9
+      z-index: 20
+      transform: scale(1.2)
+.right-side
+  flex: 1 260px
+  height: auto
+  +trans-1
+  border: thin solid $clr-med-grey
+  @media (min-width: 900px)
+    order: 2
+    &:hover
+      border: thin solid #c9c9c9
+      z-index: 20
+      transform: scale(1.2)
+.middle
+  flex: 1 260px
+  height: auto
+  +trans-1
+  border: thin solid $clr-med-grey
+  order: 3
+  @media (min-width: 900px)
+    &:hover
+      border: thin solid $clr-light-grey
+      z-index: 20
+      transform: scale(1.2)
+  //order: 2
+
+.text-graphic-1
+  width: 100%
+  padding: 40px 0 45px
+  text-align: center
+  font-weight: bolder
+  color: #fff
+  text-shadow: $text-shade-green
+  background-color: #232323
+  border-bottom: $border-color-green
+  text-shadow: $text-shade-green
+  h1
+    +font-h1
+    font-style: italic
+
+#moreLinks
+  +box-fluid
+  //min-height: 80vh
+  color: #fff
+  background-color: #232323
+.pages-menu
+  width: 90%
+  height: auto
+  margin: 0 auto
+  padding-bottom: 50px
+  border-bottom: $border-color-green
+  ul
+    width: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    li
+      display: flex
+      flex: 1 1 30%
+      margin: 10px
+      padding: 5px 0
+      //color: #232323
+      list-style: none
+      border: thin solid #262626
+      @media (max-width: 550px)
+        flex: 1 1 80%
+      @media (min-width: 551px) and (max-width: 768px)
+        flex: 1 1 50%
+      @media (min-width: 769px)
+        flex: 1 1 30%
+      a
+        width: 100%
+        height: 100%
+        margin: 0
+        padding: 6px 0
+        text-align: center
+        letter-spacing: 1.25px
+        border: thin solid $clr-green
+        border-radius: 10px
+        +font-link
+        color: #fff
+        text-decoration: none
+        background-color: $clr-green
+        &:hover
+          color: $clr-med-grey
+          text-decoration: none
+          background-color: $clr-dark-grey
+          border: thin solid $clr-green

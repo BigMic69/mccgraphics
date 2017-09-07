@@ -1,0 +1,48 @@
+*
+  font-size: 16px
+  +no-cush
+  letter-spacing: 1.5px
+
+body
+  position: relative
+  +box-fluid
+  font-family: Cabin, cursive
+
+.container-fluid
+  +no-cush
+  background: rgba(44, 44, 44, 1)
+
+#section4
+  padding-top: 50px
+  padding-bottom: 50px
+  min-height: 80vh
+  color: #fff
+  background-color: #00bcd4
+
+#section5
+  padding-top: 50px
+  padding-bottom: 50px
+  min-height: 80vh
+  color: #fff
+  background-color: #009688
+
+footer
+  //min-height: 60px
+  box-sizing: border-box
+  background-color: $clr-green
+  .info-bottom
+    height: 80px
+    padding: 10px 0
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    font-size: 1.5em
+    text-align: center
+    text-shadow: $text-shade-white
+    .copy
+      flex: 1
+      height: auto
+    .company
+      flex: 2
+      height: auto

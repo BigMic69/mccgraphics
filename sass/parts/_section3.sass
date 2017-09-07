@@ -1,0 +1,32 @@
+//----- SECTION 3 ----->>>>>
+#section3
+  +box-fluid
+  padding: 50px 40px
+  //min-height: 80vh
+  color: #fff
+  background-color: #232323
+.blackops2
+  //@include full-box
+  width: 80%
+  margin: auto
+  padding: 50px 0
+  a
+    //@include full-box
+    width: 100%
+    img
+      width: 100%
+      height: auto
+      margin: auto
+      padding: 0
+      box-shadow: $box-shade-green
+      animation: myShot 5s ease-in-out 1s infinite
+  h2
+    text-align: center
+    +font-h2
+@keyframes myShot
+  0%
+    border-color: #fff
+  50%
+    border-color: #333
+  100%
+    border-color: #fff

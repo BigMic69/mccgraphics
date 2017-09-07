@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../img/blackops2-1.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.video-mainHeader {
+	text-align: center;
+	font-family: ruthie;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	text-shadow: 0px 2px rgba(255,255,255,1.00);
+	background-color: rgba(54,50,48,0.28);
+	border: thin solid rgba(19,19,19,1.00);
+}
+.video-mainHeader h1 {
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.video-mainHeader p {
+	margin-top: 0px;
+}
+
+
+
+
+#videoDiv {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vidContainer  {
+	margin: 40px auto;
+	padding: 5px;
+	width: 48%;
+	background-color: rgba(19,19,19,1.00);
+	color: rgba(255,255,255,0.75);
+	height: auto;
+}
+video  {
+	width: 100%;
+	height: auto;
+
+}
+video source  {
+	width: 100%;
+	height: auto;
+}
+.vidContainer h2  {
+	margin: 0px auto 5px;
+	text-align: center;
+}
+
+@media screen and (min-width:320px) and (max-width:520px){
+.video-mainHeader {
+	text-align: center;
+	font-family: ruthie;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	text-shadow: 0px 2px rgba(255,255,255,1.00);
+	background-color: rgba(54,50,48,0.28);
+	border: thin solid rgba(19,19,19,1.00);
+}
+.video-mainHeader h1 {
+	font-size: 50px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+
+}
+.video-mainHeader p {
+	margin-top: 0px;
+	font-size: 28px;
+	color: rgba(19,19,19,1.00);
+}
+.vidContainer {
+	margin: 40px auto;
+	padding: 5px;
+	width: 92%;
+	background-color: rgba(19,19,19,1.00);
+	color: rgba(255,255,255,0.75);
+	height: auto;
+}
+
+
+
+
+}
+
+@media screen and (min-width:521px) and (max-width:767px){
+.video-mainHeader h1 {
+	margin-top: 20px;
+}
+.video-mainHeader p {
+	margin-top: 0px;
+}
+.vidContainer {
+	margin: 40px auto;
+	padding: 5px;
+	width: 86%;
+	background-color: rgba(19,19,19,1.00);
+	color: rgba(255,255,255,0.75);
+	height: auto;
+}
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+}

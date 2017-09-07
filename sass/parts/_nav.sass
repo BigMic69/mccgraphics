@@ -1,0 +1,38 @@
+//----- MIXIN ----->>>>>
+$text-shade-white: 1px 1px 1px #fff
+
+
+//----- NAVIGATION ----->>>>>
+body > nav
+	background: transparent !important
+	.container-fluid
+		//border-bottom: thin solid $clr-teal
+
+.navbar-brand
+	color: $clr-teal-half !important
+	&:hover
+		text-shadow: 1px 1px #fff
+
+#myNavbar
+	ul
+		li
+			margin-bottom: 4px
+			border-bottom: thin solid $clr-teal
+			&:hover
+				border-bottom: thin solid $clr-orange
+			a
+				color: #f7f7f7
+				font-size: 1.25em
+				&:hover
+					color: $clr-orange
+
+.dropdown-toggle
+	//width: 200px
+	text-align: center
+	font-size: 1.5em
+	border-radius: .5em
+	background-color: #121212
+
+.dropdown-menu
+	box-shadow: 1px 1px #ffffff
+	border-radius: 10px
