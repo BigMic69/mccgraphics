@@ -1,5 +1,6 @@
-//----- SECTION 3 ----->>>>>
+/*----- BLACK OPS 2 -----*/
 #section3
+  position: relative
   +box-fluid
   padding: 50px 40px
   //min-height: 80vh
@@ -30,3 +31,40 @@
     border-color: #333
   100%
     border-color: #fff
+
+
+/*----- T-SHIRTS -----*/
+#apparel
+  margin-top: 5vh
+  padding: 5%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 10px
+  +b-rad-20
+  +border-grey
+  +box-shade-white-half
+  background-color: $clr-teal-half
+  .img-responsive
+    +box-shade-grey-half
+
+.apparel-description
+  text-align: center
+
+.buy-button
+  position: fixed
+  width: 50px
+  height: 50px
+  left: 10px
+  bottom: 100px
+  background-image: url('../img/_t-shirt-back.png')
+  background-size: contain
+  +b-rad-10
+  img.img-responsive
+    width: 50px
+    height: 50px
+    +b-rad-10
+  p
+    margin-top: 3px
+    text-align: center
+    color: $clr-orange
+    background: #444

@@ -88,8 +88,12 @@ img
     grid-auto-rows: auto
     grid-gap: 10px
     padding: 20px
+    @media (min-width: 550px)
+      grid-template-columns: repeat(2, 1fr)
     @media (min-width: 769px)
       grid-template-columns: repeat(3, 1fr)
+    @media (min-width: 1025px)
+      grid-template-columns: repeat(4, 1fr)
     li
       grid-column: span 1
       //flex: 1 1 30%

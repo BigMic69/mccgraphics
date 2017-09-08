@@ -120,7 +120,13 @@ body > nav {
   color: #f35702;
 }
 
-/* line 31, ../sass/parts/_nav.sass */
+/* line 30, ../sass/parts/_nav.sass */
+.navbar-header {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 34, ../sass/parts/_nav.sass */
 .dropdown-toggle {
   text-align: center;
   font-size: 1.5em;
@@ -128,7 +134,7 @@ body > nav {
   background-color: #121212;
 }
 
-/* line 38, ../sass/parts/_nav.sass */
+/* line 41, ../sass/parts/_nav.sass */
 .dropdown-menu {
   box-shadow: 1px 1px #ffffff;
   border-radius: 10px;
@@ -139,7 +145,7 @@ body > nav {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 40px 0;
+  padding: 50px 0 0;
   box-sizing: border-box;
   color: #fff;
   background-size: cover;
@@ -576,20 +582,32 @@ img {
   grid-gap: 10px;
   padding: 20px;
 }
+@media (min-width: 550px) {
+  /* line 85, ../sass/parts/_section2.sass */
+  .pages-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 769px) {
   /* line 85, ../sass/parts/_section2.sass */
   .pages-menu ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* line 93, ../sass/parts/_section2.sass */
+@media (min-width: 1025px) {
+  /* line 85, ../sass/parts/_section2.sass */
+  .pages-menu ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* line 97, ../sass/parts/_section2.sass */
 .pages-menu ul li {
   grid-column: span 1;
   padding: 5px 0;
   list-style: none;
   border: thin solid #262626;
 }
-/* line 101, ../sass/parts/_section2.sass */
+/* line 105, ../sass/parts/_section2.sass */
 .pages-menu ul li a {
   display: flex;
   justify-content: center;
@@ -605,30 +623,30 @@ img {
   background-color: #316556;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  /* line 101, ../sass/parts/_section2.sass */
+  /* line 105, ../sass/parts/_section2.sass */
   .pages-menu ul li a {
     font-size: 1.5em;
   }
 }
 @media (min-width: 577px) and (max-width: 899px) {
-  /* line 101, ../sass/parts/_section2.sass */
+  /* line 105, ../sass/parts/_section2.sass */
   .pages-menu ul li a {
     font-size: 1.75em;
   }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
-  /* line 101, ../sass/parts/_section2.sass */
+  /* line 105, ../sass/parts/_section2.sass */
   .pages-menu ul li a {
     font-size: 2em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 101, ../sass/parts/_section2.sass */
+  /* line 105, ../sass/parts/_section2.sass */
   .pages-menu ul li a {
     font-size: 2.25em;
   }
 }
-/* line 114, ../sass/parts/_section2.sass */
+/* line 118, ../sass/parts/_section2.sass */
 .pages-menu ul li a:hover {
   color: #525252;
   text-decoration: none;
@@ -636,8 +654,10 @@ img {
   border: thin solid #316556;
 }
 
-/* line 2, sass/parts/_section3.sass */
+/*----- BLACK OPS 2 ----- */
+/* line 2, ../sass/parts/_section3.sass */
 #section3 {
+  position: relative;
   width: 100%;
   height: auto;
   margin: 0;
@@ -648,17 +668,17 @@ img {
   background-color: #232323;
 }
 
-/* line 8, sass/parts/_section3.sass */
+/* line 9, ../sass/parts/_section3.sass */
 .blackops2 {
   width: 80%;
   margin: auto;
   padding: 50px 0;
 }
-/* line 13, sass/parts/_section3.sass */
+/* line 14, ../sass/parts/_section3.sass */
 .blackops2 a {
   width: 100%;
 }
-/* line 16, sass/parts/_section3.sass */
+/* line 17, ../sass/parts/_section3.sass */
 .blackops2 a img {
   width: 100%;
   height: auto;
@@ -667,31 +687,31 @@ img {
   box-shadow: 2px 2px #316556;
   animation: myShot 5s ease-in-out 1s infinite;
 }
-/* line 23, sass/parts/_section3.sass */
+/* line 24, ../sass/parts/_section3.sass */
 .blackops2 h2 {
   text-align: center;
   letter-spacing: 1.25px;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  /* line 23, sass/parts/_section3.sass */
+  /* line 24, ../sass/parts/_section3.sass */
   .blackops2 h2 {
     font-size: 2.1rem;
   }
 }
 @media (min-width: 577px) and (max-width: 899px) {
-  /* line 23, sass/parts/_section3.sass */
+  /* line 24, ../sass/parts/_section3.sass */
   .blackops2 h2 {
     font-size: 2.6rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
-  /* line 23, sass/parts/_section3.sass */
+  /* line 24, ../sass/parts/_section3.sass */
   .blackops2 h2 {
     font-size: 3.2rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 23, sass/parts/_section3.sass */
+  /* line 24, ../sass/parts/_section3.sass */
   .blackops2 h2 {
     font-size: 3.9rem;
   }
@@ -707,4 +727,51 @@ img {
   100% {
     border-color: #fff;
   }
+}
+/*----- T-SHIRTS ----- */
+/* line 37, ../sass/parts/_section3.sass */
+#apparel {
+  margin-top: 5vh;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  border-radius: 20px;
+  border: thin solid #373737;
+  box-shadow: 2px 3px 3px rgba(234, 234, 234, 0.5);
+  background-color: rgba(38, 166, 154, 0.5);
+}
+/* line 47, ../sass/parts/_section3.sass */
+#apparel .img-responsive {
+  box-shadow: 2px 3px 3px rgba(55, 55, 55, 0.5);
+}
+
+/* line 50, ../sass/parts/_section3.sass */
+.apparel-description {
+  text-align: center;
+}
+
+/* line 53, ../sass/parts/_section3.sass */
+.buy-button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  bottom: 100px;
+  background-image: url("../img/_t-shirt-back.png");
+  background-size: contain;
+  border-radius: 10px;
+}
+/* line 62, ../sass/parts/_section3.sass */
+.buy-button img.img-responsive {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+/* line 66, ../sass/parts/_section3.sass */
+.buy-button p {
+  margin-top: 3px;
+  text-align: center;
+  color: #f35702;
+  background: #444;
 }
