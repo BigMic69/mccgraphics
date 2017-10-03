@@ -96,12 +96,14 @@ img
       grid-template-columns: repeat(4, 1fr)
     li
       grid-column: span 1
+      grid-row: auto
       //flex: 1 1 30%
-      //margin: 10px
+      +no-cush
       padding: 5px 0
       //color: #232323
       list-style: none
       border: thin solid #262626
+      +b-rad-10
       a
         display: flex
         justify-content: center
@@ -111,6 +113,7 @@ img
         letter-spacing: 1.25px
         border: thin solid $clr-green
         border-radius: 10px
+        +box-shade-white-half
         +font-link
         color: #fff
         text-decoration: none
@@ -120,3 +123,4 @@ img
           text-decoration: none
           background-color: $clr-dark-grey
           border: thin solid $clr-green
+          +box-shade-grey-half
