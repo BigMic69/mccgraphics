@@ -2,15 +2,34 @@
 #section3
   position: relative
   +box-fluid
-  padding: 50px 40px
+  padding: 100px 0
   //min-height: 80vh
   color: #fff
-  background-color: #232323
+  background-color: #444
+
+.btn-contact
+  // width: 30%
+  font-size: 1.3em
+  border: thin solid #777
+  margin: 2em auto 2em 2em
+  padding: .75em
+  text-decoration: none
+  background: $clr-primary
+  color: #fff
+  +b-rad(.5em)
+  +trans-0
+  &:hover
+    background: #333
+    color: #f0f0f0
+    text-decoration: none
+
 .blackops2
   //@include full-box
-  width: 80%
-  margin: auto
+  width: 60%
+  margin: 2em auto
   padding: 50px 0
+  @media (max-width: 700px)
+    width: 80%
   a
     //@include full-box
     width: 100%
@@ -20,17 +39,12 @@
       margin: auto
       padding: 0
       box-shadow: $box-shade-green
-      animation: myShot 5s ease-in-out 1s infinite
   h2
+    margin: 1em auto
+    font-size: 1.875em
+    text-shadow: 1px 1px #333
     text-align: center
-    +font-h2
-@keyframes myShot
-  0%
-    border-color: #fff
-  50%
-    border-color: #333
-  100%
-    border-color: #fff
+
 
 
 /*----- T-SHIRTS -----*/
@@ -38,17 +52,30 @@
   margin-top: 5vh
   padding: 5%
   display: grid
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr
+  grid-template-rows: auto
   grid-gap: 10px
-  +b-rad-20
-  +border-grey
-  +box-shade-white-half
-  background-color: $clr-teal-half
-  .img-responsive
-    +box-shade-grey-half
-
-.apparel-description
-  text-align: center
+  +b-rad(20px)
+  background-color: $clr-primary
+  @media (min-width: 700px)
+    grid-template-columns: repeat(2, 1fr)
+  .img-container
+    grid-column: span 1
+    // width: 60%
+    margin: 0 auto
+    box-shadow: 2px 2px 5px #444
+    @media (max-width: 700px)
+      width: 60%
+  .apparel-description
+    grid-column: 2 span
+    text-align: center
+    h2
+      margin: 1em auto
+      font-size: 2em
+      text-shadow: 1px 1px #333
+    p
+      font-size: 1.3em
+      line-height: 1.5em
 
 .buy-button
   position: fixed
@@ -58,11 +85,11 @@
   bottom: 100px
   background-image: url('../img/_t-shirt-back.png')
   background-size: contain
-  +b-rad-10
+  +b-rad(10px)
   img.img-responsive
     width: 50px
     height: 50px
-    +b-rad-10
+    +b-rad(10px)
   p
     margin-top: 3px
     text-align: center

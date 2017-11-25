@@ -26,35 +26,37 @@ img
 .left-side
   flex: 1 260px
   height: auto
-  +trans-1
+  +trans-0
   border: thin solid $clr-med-grey
   @media (min-width: 900px)
+    transform-origin: left
     &:hover
       border: thin solid #c9c9c9
       z-index: 20
-      transform: scale(1.2)
+      transform: scale(1.1)
 .right-side
   flex: 1 260px
   height: auto
-  +trans-1
+  +trans-0
   border: thin solid $clr-med-grey
   @media (min-width: 900px)
     order: 2
     &:hover
       border: thin solid #c9c9c9
       z-index: 20
-      transform: scale(1.2)
+      transform: scale(1.1)
 .middle
   flex: 1 260px
   height: auto
-  +trans-1
+  +trans-0
   border: thin solid $clr-med-grey
   order: 3
   @media (min-width: 900px)
+    transform-origin: right
     &:hover
       border: thin solid $clr-light-grey
       z-index: 20
-      transform: scale(1.2)
+      transform: scale(1.1)
   //order: 2
 
 .text-graphic-1
@@ -95,25 +97,22 @@ img
     @media (min-width: 1025px)
       grid-template-columns: repeat(4, 1fr)
     li
-      grid-column: span 1
-      grid-row: auto
+      //grid-column: span 1
+      //grid-row: auto
       //flex: 1 1 30%
-      +no-cush
-      padding: 5px 0
+      //+no-cush
       //color: #232323
       list-style: none
       border: thin solid #262626
-      +b-rad-10
+      +b-rad(10px)
       a
         display: flex
+        padding: 10px 0
         justify-content: center
-        margin: 0
-        padding: 6px 0
         text-align: center
         letter-spacing: 1.25px
         border: thin solid $clr-green
         border-radius: 10px
-        +box-shade-white-half
         +font-link
         color: #fff
         text-decoration: none
@@ -123,4 +122,3 @@ img
           text-decoration: none
           background-color: $clr-dark-grey
           border: thin solid $clr-green
-          +box-shade-grey-half
