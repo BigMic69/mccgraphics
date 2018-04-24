@@ -1,0 +1,34 @@
+.white-plush
+  background-image: url(../img/white-plush-1.jpg)
+  +bg-cover
+
+.text-warning
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 20vh 0 30px
+  text-align: center
+  color: #262626
+  border-top: $border-color-green
+  h2
+    margin-bottom: 20px
+    font-weight: 600
+    +font-h2
+  p
+    width: 96%
+    margin: auto 2%
+    padding: 5px 5px 10px
+    font-weight: 500
+    background: rgba(222, 222, 222, .7)
+    border-radius: 5px
+    border: thin solid rgba(33, 33, 33, .3)
+    //border-right: thin solid #333
+    box-shadow: 4px 2px 1px $clr-green
+    +font-p
+    //@media (max-width: 768px)
+      width: 90%
+      margin: auto 5%
+    @media (min-width: 769px)
+      width: 80%
+      margin: 20px auto
+      padding: 20px
